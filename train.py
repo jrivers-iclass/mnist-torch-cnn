@@ -1,7 +1,6 @@
 # Import dependencies
 import torch 
-from PIL import Image
-from torch import nn, save, load
+from torch import nn, save
 from torch.optim import Adam
 from torch.utils.data import DataLoader
 from torchvision import datasets
