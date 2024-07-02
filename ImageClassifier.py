@@ -6,7 +6,7 @@ class ImageClassifier(nn.Module):
         super().__init__()
         self.model = nn.Sequential(
             nn.Conv2d(1, 32, (3,3)),  # Input layer with 1 channel, 32 filters, and 3x3 kernel
-            nn.ReLU(),
+            nn.ReLU(), # Activation function for the input layer using ReLU (Rectified Linear Unit)
             nn.Conv2d(32, 64, (3,3)), # Hidden layer with 32 filters, 64 filters, and 3x3 kernel
             nn.ReLU(),
             nn.Conv2d(64, 64, (3,3)), # Hidden layer with 64 filters, 64 filters, and 3x3 kernel

@@ -8,19 +8,19 @@ from torchvision.transforms import ToTensor
 from ImageClassifier import ImageClassifier
 
 # Hyperparameters
-epochs = 10
-learning_rate = 0.001
+epochs = 10 # Number of times to iterate over the dataset
+learning_rate = 0.001 # Learning rate for the optimizer
 device = 'cuda' if torch.cuda.is_available() else 'cpu'
 
 # Get data 
 train = datasets.MNIST(root="data", download=True, train=True, transform=ToTensor())
-dataset = DataLoader(train, 32)
+dataset = DataLoader(train, 32) # Batch size of 32, 60000 images (mini batches)
 #1,28,28 - classes 0-9
     
 # Create the model, optimizer, and loss function    
-model = ImageClassifier().to(device)
-opt = Adam(model.parameters(), lr=learning_rate)
-loss_fn = nn.CrossEntropyLoss() 
+model = ImageClassifier().to(device) # Instance of the neural network
+opt = Adam(model.parameters(), lr=learning_rate) # Optimizer for updating the weights
+loss_fn = nn.CrossEntropyLoss()  # Loss function for classification
 
 # Train the model
 for epoch in range(epochs):
