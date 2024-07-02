@@ -20,3 +20,10 @@ The available images are:
 
 To run the inferencing use:
 - `python inference.py`
+
+
+# Documentation
+- [Pytorch](https://pytorch.org/)
+- [ReLU](https://en.wikipedia.org/wiki/Rectifier_(neural_networks))
+- [Back Propagation](https://en.wikipedia.org/wiki/Backpropagation)
+- [ConvNet](https://en.wikipedia.org/wiki/Convolutional_neural_network)
