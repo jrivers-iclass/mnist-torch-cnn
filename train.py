@@ -13,7 +13,7 @@ learning_rate = 0.001 # Learning rate for the optimizer
 device = 'cuda' if torch.cuda.is_available() else 'cpu'
 
 # Get data 
-train = datasets.MNIST(root="data", download=True, train=True, transform=ToTensor())
+train = datasets.MNIST(root=".data", download=True, train=True, transform=ToTensor())
 dataset = DataLoader(train, 32) # Batch size of 32, 60000 images (mini batches)
 #1,28,28 - classes 0-9
     
