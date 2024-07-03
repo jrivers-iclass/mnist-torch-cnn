@@ -27,3 +27,8 @@ To run the inferencing use:
 - [ReLU](https://en.wikipedia.org/wiki/Rectifier_(neural_networks))
 - [Back Propagation](https://en.wikipedia.org/wiki/Backpropagation)
 - [ConvNet](https://en.wikipedia.org/wiki/Convolutional_neural_network)
+
+
+# Cuda
+- install [conda](https://github.com/conda-forge/miniforge)
+- install [cuda](https://docs.nvidia.com/cuda/cuda-installation-guide-microsoft-windows/index.html)
